@@ -167,5 +167,47 @@
             <p class="description">Get your best promotional Values from any safari Website of Choice</p>
         </header>
         
+        <section class="input-section">
+            <div class="input-group">
+                <label for="url-input">Website URL</label>
+                <input type="text" id="url-input" placeholder="https://example-safari-park.com/promotions">
+            </div>
+            
+            <div class="input-group">
+                <label for="search-terms">Search Terms (Optional)</label>
+                <input type="text" id="search-terms" placeholder="promotion, discount, offer, deal">
+            </div>
+            
+            <div class="input-group">
+                <label for="content-type">Content Type to Extract</label>
+                <select id="content-type">
+                    <option value="all">All Promotional Content</option>
+                    <option value="deals">Special Deals</option>
+                    <option value="events">Events</option>
+                    <option value="discounts">Discounts</option>
+                </select>
+            </div>
+            
+            <button id="scrape-button">Scrape Promotions</button>
+        </section>
+        
+        <section class="results-section">
+            <div class="results-header">
+                <h2>Extracted Promotions</h2>
+                <button id="export-button">Export Results</button>
+            </div>
+            
+            <div class="results-container" id="results-container">
+                <div class="loading" id="loading-message" style="display: none;">
+                    <p>Scraping website for promotions...</p>
+                </div>
+                <div id="results-content">
+                    <p>Enter a URL and click "Scrape Promotions" to extract promotional content.</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Note: This Was Designed by Group 2.</p>
+        </footer>
     </div>
-</body>
